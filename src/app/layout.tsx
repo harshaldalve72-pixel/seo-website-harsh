@@ -13,12 +13,56 @@ const outfit = Outfit({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://dmfirst.example.com'),
+  metadataBase: new URL('https://dmfirst-ten.vercel.app'),
   title: {
     default: 'DMFirst Game - Premium Online Gaming',
     template: '%s | DMFirst'
   },
   description: 'DMFirst is a premium online gaming platform offering fast payouts, fair games, and an exceptional user experience.',
+  applicationName: 'DMFirst',
+  keywords: [
+    'DMFirst',
+    'online gaming',
+    'casino games',
+    'Aviator game',
+    'roulette',
+    'blackjack',
+    'baccarat',
+  ],
+  authors: [{ name: 'DMFirst' }],
+  creator: 'DMFirst',
+  publisher: 'DMFirst',
+  category: 'entertainment',
+  alternates: {
+    canonical: '/',
+  },
+  openGraph: {
+    type: 'website',
+    locale: 'en_US',
+    url: '/',
+    siteName: 'DMFirst',
+    title: 'DMFirst Game - Premium Online Gaming',
+    description: 'Explore games, rewards, account tools, and platform information from DMFirst.',
+  },
+  twitter: {
+    card: 'summary',
+    title: 'DMFirst Game - Premium Online Gaming',
+    description: 'Explore games, rewards, account tools, and platform information from DMFirst.',
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+      'max-video-preview': -1,
+    },
+  },
+  verification: {
+    google: 'SXjZIfkl532S1vJSBcdQxYohWUwOa9VOlXe6arQPWQc',
+  },
 };
 
 export default function RootLayout({

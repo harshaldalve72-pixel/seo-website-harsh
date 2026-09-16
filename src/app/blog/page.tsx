@@ -41,7 +41,7 @@ export default function BlogPage() {
     '@type': 'Blog',
     name: 'DMFirst Blog',
     description: 'News and guides about online gaming',
-    url: 'https://dmfirst.example.com/blog'
+    url: 'https://dmfirst-ten.vercel.app/blog'
   };
 
   return (

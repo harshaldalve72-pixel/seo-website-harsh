@@ -21,13 +21,13 @@ export function Breadcrumbs({ items }: BreadcrumbsProps) {
         '@type': 'ListItem',
         position: 1,
         name: 'Home',
-        item: 'https://dmfirst.example.com/',
+        item: 'https://dmfirst-ten.vercel.app/',
       },
       ...items.map((item, index) => ({
         '@type': 'ListItem',
         position: index + 2,
         name: item.name,
-        item: `https://dmfirst.example.com${item.url}`,
+        item: `https://dmfirst-ten.vercel.app${item.url}`,
       })),
     ],
   };

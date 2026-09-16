@@ -59,7 +59,7 @@ export default function GamesPage() {
     '@type': 'CollectionPage',
     name: 'DMFirst Games Collection',
     description: 'Browse the complete collection of online casino games available on DMFirst.',
-    url: 'https://dmfirst.example.com/games'
+    url: 'https://dmfirst-ten.vercel.app/games'
   };
 
   return (

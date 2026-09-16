@@ -25,7 +25,7 @@ const websiteSchema = {
   "@context": "https://schema.org",
   "@type": "WebSite",
   "name": "DMFirst Game",
-  "url": "https://dmfirst.example.com/"
+  "url": "https://dmfirst-ten.vercel.app/"
 };
 
 const faqSchema = {

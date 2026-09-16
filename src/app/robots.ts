@@ -7,6 +7,6 @@ export default function robots(): MetadataRoute.Robots {
       allow: '/',
       disallow: ['/api/', '/admin/'],
     },
-    sitemap: 'https://dmfirst.example.com/sitemap.xml',
+    sitemap: 'https://dmfirst-ten.vercel.app/sitemap.xml',
   };
 }

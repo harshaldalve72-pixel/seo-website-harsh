@@ -4,7 +4,7 @@ import './globals.css';
 import { Header } from '@/components/layout/Header';
 import { Footer } from '@/components/layout/Footer';
 import { Sidebar } from '@/components/layout/Sidebar';
-import { GoogleAnalytics } from '@next/third-parties/google';
+
 
 const outfit = Outfit({ 
   subsets: ['latin'],

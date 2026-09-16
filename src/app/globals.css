@@ -1,0 +1,64 @@
+@import "tailwindcss";
+
+@theme {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-border: var(--border);
+  --radius-sm: var(--radius-sm);
+  --radius-md: var(--radius-md);
+  --radius-lg: var(--radius-lg);
+  --radius-xl: var(--radius-xl);
+}
+
+:root {
+  /* Match the DMFirst Logo Theme (Dark Green) */
+  --background: #031111;
+  --foreground: #fafafa;
+  
+  --primary: #10b981; /* vibrant emerald green */
+  --primary-foreground: #ffffff;
+  
+  --secondary: #082c1f;
+  --secondary-foreground: #fafafa;
+  
+  --accent: #059669; 
+  --accent-foreground: #ffffff;
+  
+  --muted: #073022;
+  --muted-foreground: #94a3b8;
+  
+  --card: #082c1f;
+  --card-foreground: #fafafa;
+  
+  --border: #073022;
+  
+  --radius-sm: 0.25rem;
+  --radius-md: 0.5rem;
+  --radius-lg: 1rem;
+  --radius-xl: 1.5rem;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-outfit), sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Base utilities */
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}

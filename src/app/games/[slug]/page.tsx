@@ -1,4 +1,5 @@
 import { notFound } from 'next/navigation';
+import Link from 'next/link';
 import { Breadcrumbs } from '@/components/ui/Breadcrumbs';
 import { FAQ } from '@/components/ui/FAQ';
 import { Button } from '@/components/ui/Button';
@@ -171,9 +172,22 @@ export async function generateMetadata(
     return { title: 'Game Not Found' };
   }
 
-  const title = `${game.title} - Play Online | DMFirst Games`;
-  const description = `Learn how to play ${game.title} on DMFirst. Read the rules, understand the terminology, and play responsibly.`;
+  const oldTitle = `${game.title} - Play Online | DMFirst Games`;
+  const oldDescription = `Learn how to play ${game.title} on DMFirst. Read the rules, understand the terminology, and play responsibly.`;
   const url = `https://dmfirst-ten.vercel.app/games/${params.slug}`;
+
+  const seoMap: Record<string, { title: string, description: string }> = {
+    aviator: { title: "Aviator Online | How to Play | DMFirst", description: "Learn how to play Aviator online at DMFirst, including the basic gameplay, rules and features of the game." },
+    roulette: { title: "Roulette Online | How to Play | DMFirst", description: "Learn how to play Roulette online at DMFirst, including the basic gameplay, rules and features of the game." },
+    blackjack: { title: "Blackjack Online | How to Play | DMFirst", description: "Learn how to play Blackjack online at DMFirst, including the basic gameplay, rules and features of the game." },
+    baccarat: { title: "Baccarat Online | How to Play | DMFirst", description: "Learn how to play Baccarat online at DMFirst, including the basic gameplay, rules and features of the game." },
+    crash: { title: "Crash Games Online | How to Play | DMFirst", description: "Learn how to play Crash games online at DMFirst, including the basic gameplay, rules and features of the game." },
+    plinko: { title: "Plinko Online | How to Play | DMFirst", description: "Learn how to play Plinko online at DMFirst, including the basic gameplay, rules and features of the game." },
+    hilo: { title: "Hi-Lo Online | How to Play | DMFirst", description: "Learn how to play Hi-Lo online at DMFirst, including the basic gameplay, rules and features of the game." },
+  };
+
+  const title = seoMap[params.slug]?.title || oldTitle;
+  const description = seoMap[params.slug]?.description || oldDescription;
 
   return {
     title,
@@ -182,13 +196,13 @@ export async function generateMetadata(
       canonical: url,
     },
     openGraph: {
-      title,
-      description,
+      title: oldTitle,
+      description: oldDescription,
       url,
     },
     twitter: {
-      title,
-      description,
+      title: oldTitle,
+      description: oldDescription,
     },
   };
 }
@@ -218,6 +232,16 @@ export default async function GamePage(props: { params: Promise<{ slug: string }
     { name: game.title, url: `/games/${params.slug}` }
   ];
 
+  const h1Map: Record<string, string> = {
+    aviator: 'How to Play Aviator Online',
+    roulette: 'How to Play Roulette Online',
+    blackjack: 'How to Play Blackjack Online',
+    baccarat: 'How to Play Baccarat Online',
+    crash: 'How to Play Crash Games Online',
+    plinko: 'How to Play Plinko Online',
+    hilo: 'How to Play Hi-Lo Online',
+  };
+
   return (
     <>
       <Schema data={schemaData} />
@@ -232,9 +256,14 @@ export default async function GamePage(props: { params: Promise<{ slug: string }
               <div className="inline-block px-3 py-1 mb-4 text-xs font-semibold tracking-wider text-white bg-[var(--primary)] rounded-full">
                 {game.category}
               </div>
-              <h1 className="text-4xl md:text-5xl font-bold mb-4">{game.title}</h1>
+              <h1 className="text-4xl md:text-5xl font-bold mb-4">
+                {h1Map[params.slug] || game.title}
+              </h1>
               <p className="text-lg text-[var(--muted-foreground)] text-balance">
                 {game.description}
+              </p>
+              <p className="mt-4 text-sm text-[var(--muted-foreground)]">
+                Looking for more? Browse all <Link href="/games" className="text-[var(--primary)] hover:underline">online casino games</Link> or try our popular <Link href="/games/crash" className="text-[var(--primary)] hover:underline">Crash games</Link>.
               </p>
             </div>
             

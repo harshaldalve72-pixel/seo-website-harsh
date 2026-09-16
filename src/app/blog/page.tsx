@@ -4,8 +4,8 @@ import { Schema } from '@/components/seo/Schema';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'DMFirst Blog – Gaming Guides & News',
-  description: 'Read the latest guides, news, and tips on online gaming, strategy, and platform updates from DMFirst.',
+  title: 'DMFirst Gaming Blog & Guides',
+  description: 'Read DMFirst gaming guides, helpful articles, terminology explanations and payment-related information.',
   alternates: {
     canonical: 'https://dmfirst-ten.vercel.app/blog',
   },

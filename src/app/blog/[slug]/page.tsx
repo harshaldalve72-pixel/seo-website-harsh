@@ -1,4 +1,5 @@
 import { notFound } from 'next/navigation';
+import Link from 'next/link';
 import { Breadcrumbs } from '@/components/ui/Breadcrumbs';
 import { Schema } from '@/components/seo/Schema';
 import type { Metadata } from 'next';
@@ -101,7 +102,10 @@ export default async function BlogPostPage(props: { params: Promise<{ slug: stri
             {/* Extended dummy content for structure */}
             <h2>Conclusion</h2>
             <p>
-              Always remember that playing on DMFirst should be about entertainment. Apply the knowledge from this guide, use our responsible gaming tools, and most importantly, have fun!
+              Always remember that playing on DMFirst should be about entertainment. Apply the knowledge from this guide, use our <Link href="/responsible-gaming" className="text-[var(--primary)] hover:underline">responsible gaming tools</Link>, and most importantly, have fun!
+            </p>
+            <p className="mt-4 pt-4 border-t border-[var(--border)] text-sm">
+              Read more in our <Link href="/blog" className="text-[var(--primary)] hover:underline">Gaming Blog</Link> or start playing <Link href="/games" className="text-[var(--primary)] hover:underline">available games</Link> now.
             </p>
           </div>
         </div>

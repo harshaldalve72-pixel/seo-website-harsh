@@ -4,8 +4,8 @@ import { Schema } from '@/components/seo/Schema';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'DMFirst Games – Explore Available Games',
-  description: 'Explore the games available on DMFirst and learn about their features, rules, and platform information. Play Crash, Roulette, Blackjack and more.',
+  title: 'Online Casino Games | DMFirst',
+  description: 'Explore popular online casino games at DMFirst, including Aviator, Roulette, Blackjack, Baccarat, Crash, Plinko and Hi-Lo.',
   alternates: {
     canonical: 'https://dmfirst-ten.vercel.app/games',
   },
@@ -81,7 +81,7 @@ export default function GamesPage() {
       <div className="bg-[var(--secondary)] py-12 border-b border-[var(--border)]">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <Breadcrumbs items={[{ name: 'Games', url: '/games' }]} />
-          <h1 className="text-4xl font-bold mb-4">All Games</h1>
+          <h1 className="text-4xl font-bold mb-4">Play Online Casino Games at DMFirst</h1>
           <p className="text-[var(--muted-foreground)] max-w-2xl text-lg">
             Dive into our premium collection of games. From classic table games to innovative crash mechanics, we offer a fair and thrilling experience for everyone.
           </p>

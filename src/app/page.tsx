@@ -6,8 +6,8 @@ import Link from 'next/link';
 import { Play } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: 'DMFirst Game',
-  description: 'DMFirst is an online gaming platform offering game information, account access, login, registration and useful details about the DMFirst Game experience.',
+  title: 'DMFirst - Premium Online Gaming Platform',
+  description: 'Explore DMFirst online gaming with popular games including Aviator, Roulette, Blackjack, Baccarat, Crash, Plinko and Hi-Lo.',
   alternates: {
     canonical: 'https://dmfirst-ten.vercel.app/',
   },
@@ -37,6 +37,14 @@ const websiteSchema = {
   "url": "https://dmfirst-ten.vercel.app/"
 };
 
+const orgSchema = {
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "DMFirst",
+  "url": "https://dmfirst-ten.vercel.app/",
+  "logo": "https://dmfirst-ten.vercel.app/DM-First.webp"
+};
+
 const faqSchema = {
   "@context": "https://schema.org",
   "@type": "FAQPage",
@@ -63,6 +71,7 @@ export default function Home() {
   return (
     <>
       <Schema data={websiteSchema} />
+      <Schema data={orgSchema} />
       <Schema data={faqSchema} />
 
       {/* Hero Banner Area */}
@@ -76,7 +85,7 @@ export default function Home() {
               🎉 New Rewards Available
             </div>
             <h1 className="text-5xl md:text-6xl font-extrabold text-[var(--foreground)] tracking-tight">
-              Play, Win,<br /> <span className="text-[var(--primary)]">Level Up.</span>
+              DMFirst: Premium<br /> <span className="text-[var(--primary)]">Online Gaming Platform</span>
             </h1>
             <p className="text-lg text-[var(--muted-foreground)] max-w-lg">
               Explore DMFirst for a premium gaming experience, fast cashouts, and a wide selection of entertainment options.
@@ -147,7 +156,7 @@ export default function Home() {
           
           <div className="prose prose-invert prose-sm max-w-none text-[var(--muted-foreground)]">
             <p>
-              DMFirst is designed as an easy-to-use online entertainment platform for users who want straightforward navigation, account tools and different game categories in one place.
+              DMFirst is designed as an easy-to-use <Link href="/about" className="text-[var(--primary)] hover:underline">online entertainment platform</Link> for users who want straightforward navigation, account tools and different <Link href="/games" className="text-[var(--primary)] hover:underline">game categories</Link> in one place.
             </p>
 
             <h2 className="text-[var(--foreground)] font-bold mt-8 mb-4">🟨 Features of DMFirst</h2>
@@ -163,11 +172,14 @@ export default function Home() {
             </div>
 
             <h2 className="text-[var(--foreground)] font-bold mt-8 mb-4">🟨 All About DMFirst Platform</h2>
-            <p>DMFirst brings multiple entertainment categories into one online platform. Users can browse the available sections, sign in to an account and explore games from a mobile or desktop browser.</p>
+            <p>DMFirst brings multiple entertainment categories into one online platform. Users can browse the available sections, check our <Link href="/blog" className="text-[var(--primary)] hover:underline">latest guides</Link>, sign in to an account, and explore games using various <Link href="/payment-methods" className="text-[var(--primary)] hover:underline">payment methods</Link> from a mobile or desktop browser. We also support <Link href="/responsible-gaming" className="text-[var(--primary)] hover:underline">responsible gaming</Link>.</p>
 
             <h2 className="text-[var(--foreground)] font-bold mt-8 mb-4">🟨 Frequently Asked Questions About DMFirst</h2>
             <div className="not-prose">
               <FAQ items={faqs} />
+              <div className="mt-4 text-center">
+                <Link href="/faq" className="text-sm font-medium text-[var(--primary)] hover:underline">View All FAQs →</Link>
+              </div>
             </div>
           </div>
         </div>

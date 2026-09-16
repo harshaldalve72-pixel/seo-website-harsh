@@ -6,21 +6,19 @@ export default function sitemap(): MetadataRoute.Sitemap {
   // Static routes
   const staticRoutes = [
     '',
-    '/games',
-    '/registration',
-    '/login',
-    '/payment-methods',
-    '/withdrawals',
-    '/referral',
-    '/rewards',
-    '/vip',
-    '/responsible-gaming',
-    '/faq',
     '/about',
-    '/contact',
-    '/terms',
-    '/privacy-policy',
     '/blog',
+    '/contact',
+    '/faq',
+    '/games',
+    '/payment-methods',
+    '/privacy-policy',
+    '/referral',
+    '/responsible-gaming',
+    '/rewards',
+    '/terms',
+    '/vip',
+    '/withdrawals',
   ];
 
   const staticSitemap: MetadataRoute.Sitemap = staticRoutes.map((route) => ({

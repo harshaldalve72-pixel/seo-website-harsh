@@ -171,9 +171,25 @@ export async function generateMetadata(
     return { title: 'Game Not Found' };
   }
 
+  const title = `${game.title} - Play Online | DMFirst Games`;
+  const description = `Learn how to play ${game.title} on DMFirst. Read the rules, understand the terminology, and play responsibly.`;
+  const url = `https://dmfirst-ten.vercel.app/games/${params.slug}`;
+
   return {
-    title: `${game.title} - Play Online | DMFirst Games`,
-    description: `Learn how to play ${game.title} on DMFirst. Read the rules, understand the terminology, and play responsibly.`,
+    title,
+    description,
+    alternates: {
+      canonical: url,
+    },
+    openGraph: {
+      title,
+      description,
+      url,
+    },
+    twitter: {
+      title,
+      description,
+    },
   };
 }
 

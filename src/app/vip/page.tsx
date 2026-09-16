@@ -4,6 +4,18 @@ import { Breadcrumbs } from '@/components/ui/Breadcrumbs';
 export const metadata: Metadata = {
   title: 'VIP Club - Exclusive Benefits | DMFirst',
   description: 'Become a DMFirst VIP and unlock exclusive benefits including dedicated account managers, higher withdrawal limits, and personalized bonuses.',
+  alternates: {
+    canonical: 'https://dmfirst-ten.vercel.app/vip',
+  },
+  openGraph: {
+    title: 'VIP Club - Exclusive Benefits | DMFirst',
+    description: 'Become a DMFirst VIP and unlock exclusive benefits including dedicated account managers, higher withdrawal limits, and personalized bonuses.',
+    url: 'https://dmfirst-ten.vercel.app/vip',
+  },
+  twitter: {
+    title: 'VIP Club - Exclusive Benefits | DMFirst',
+    description: 'Become a DMFirst VIP and unlock exclusive benefits including dedicated account managers, higher withdrawal limits, and personalized bonuses.',
+  },
 };
 
 export default function Page() {

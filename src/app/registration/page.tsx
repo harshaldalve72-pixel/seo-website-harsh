@@ -4,6 +4,22 @@ import { Breadcrumbs } from '@/components/ui/Breadcrumbs';
 export const metadata: Metadata = {
   title: 'Register | DMFirst',
   description: 'Create your DMFirst account today to access premium games, exclusive rewards, and fast withdrawals. Registration is quick, easy, and secure.',
+  alternates: {
+    canonical: 'https://dmfirst-ten.vercel.app/registration',
+  },
+  openGraph: {
+    title: 'Register | DMFirst',
+    description: 'Create your DMFirst account today to access premium games, exclusive rewards, and fast withdrawals. Registration is quick, easy, and secure.',
+    url: 'https://dmfirst-ten.vercel.app/registration',
+  },
+  twitter: {
+    title: 'Register | DMFirst',
+    description: 'Create your DMFirst account today to access premium games, exclusive rewards, and fast withdrawals. Registration is quick, easy, and secure.',
+  },
+  robots: {
+    index: false,
+    follow: false,
+  },
 };
 
 export default function Page() {

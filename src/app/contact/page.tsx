@@ -4,6 +4,18 @@ import { Breadcrumbs } from '@/components/ui/Breadcrumbs';
 export const metadata: Metadata = {
   title: 'Contact Us - 24/7 Support | DMFirst',
   description: 'Need help? Contact the DMFirst support team via live chat or email. We are available 24/7 to assist you with any inquiries.',
+  alternates: {
+    canonical: 'https://dmfirst-ten.vercel.app/contact',
+  },
+  openGraph: {
+    title: 'Contact Us - 24/7 Support | DMFirst',
+    description: 'Need help? Contact the DMFirst support team via live chat or email. We are available 24/7 to assist you with any inquiries.',
+    url: 'https://dmfirst-ten.vercel.app/contact',
+  },
+  twitter: {
+    title: 'Contact Us - 24/7 Support | DMFirst',
+    description: 'Need help? Contact the DMFirst support team via live chat or email. We are available 24/7 to assist you with any inquiries.',
+  },
 };
 
 export default function Page() {

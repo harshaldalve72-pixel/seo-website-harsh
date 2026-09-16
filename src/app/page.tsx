@@ -9,8 +9,17 @@ export const metadata: Metadata = {
   title: 'DMFirst Game',
   description: 'DMFirst is an online gaming platform offering game information, account access, login, registration and useful details about the DMFirst Game experience.',
   alternates: {
-    canonical: '/',
-  }
+    canonical: 'https://dmfirst-ten.vercel.app/',
+  },
+  openGraph: {
+    title: 'DMFirst Game',
+    description: 'DMFirst is an online gaming platform offering game information, account access, login, registration and useful details about the DMFirst Game experience.',
+    url: 'https://dmfirst-ten.vercel.app/',
+  },
+  twitter: {
+    title: 'DMFirst Game',
+    description: 'DMFirst is an online gaming platform offering game information, account access, login, registration and useful details about the DMFirst Game experience.',
+  },
 };
 
 const faqs = [
@@ -73,7 +82,7 @@ export default function Home() {
               Explore DMFirst for a premium gaming experience, fast cashouts, and a wide selection of entertainment options.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 pt-4">
-              <Link href="https://www.dmfirst0.com/#/register?invitationCode=12651331794" className="inline-flex items-center justify-center rounded-lg bg-[var(--primary)] text-[var(--primary-foreground)] px-8 py-3.5 text-lg font-bold hover:bg-[var(--accent)] transition-colors shadow-[0_0_20px_rgba(16,185,129,0.3)] hover:shadow-[0_0_30px_rgba(16,185,129,0.5)]">
+              <Link href="https://www.dmfirst0.com/#/register?invitationCode=12651331794" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center rounded-lg bg-[var(--primary)] text-[var(--primary-foreground)] px-8 py-3.5 text-lg font-bold hover:bg-[var(--accent)] transition-colors shadow-[0_0_20px_rgba(16,185,129,0.3)] hover:shadow-[0_0_30px_rgba(16,185,129,0.5)]">
                 Register Now
               </Link>
             </div>
@@ -85,6 +94,7 @@ export default function Home() {
                 src="/DM-First.webp"
                 alt="DMFirst Logo Large"
                 fill
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                 className="object-contain"
                 priority
               />

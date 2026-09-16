@@ -4,6 +4,18 @@ import { Breadcrumbs } from '@/components/ui/Breadcrumbs';
 export const metadata: Metadata = {
   title: 'Terms of Service | DMFirst',
   description: 'Read the DMFirst Terms of Service. Important information regarding your use of our platform, account rules, and legal agreements.',
+  alternates: {
+    canonical: 'https://dmfirst-ten.vercel.app/terms',
+  },
+  openGraph: {
+    title: 'Terms of Service | DMFirst',
+    description: 'Read the DMFirst Terms of Service. Important information regarding your use of our platform, account rules, and legal agreements.',
+    url: 'https://dmfirst-ten.vercel.app/terms',
+  },
+  twitter: {
+    title: 'Terms of Service | DMFirst',
+    description: 'Read the DMFirst Terms of Service. Important information regarding your use of our platform, account rules, and legal agreements.',
+  },
 };
 
 export default function Page() {

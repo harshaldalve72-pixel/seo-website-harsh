@@ -4,6 +4,18 @@ import { Breadcrumbs } from '@/components/ui/Breadcrumbs';
 export const metadata: Metadata = {
   title: 'About DMFirst - Our Story | DMFirst',
   description: 'Learn about the team behind DMFirst, our mission to provide the best online gaming experience, and our commitment to fairness and security.',
+  alternates: {
+    canonical: 'https://dmfirst-ten.vercel.app/about',
+  },
+  openGraph: {
+    title: 'About DMFirst - Our Story | DMFirst',
+    description: 'Learn about the team behind DMFirst, our mission to provide the best online gaming experience, and our commitment to fairness and security.',
+    url: 'https://dmfirst-ten.vercel.app/about',
+  },
+  twitter: {
+    title: 'About DMFirst - Our Story | DMFirst',
+    description: 'Learn about the team behind DMFirst, our mission to provide the best online gaming experience, and our commitment to fairness and security.',
+  },
 };
 
 export default function Page() {

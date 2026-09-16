@@ -4,6 +4,18 @@ import { Breadcrumbs } from '@/components/ui/Breadcrumbs';
 export const metadata: Metadata = {
   title: 'Payment Methods & Deposit Options | DMFirst',
   description: 'Explore the secure and fast payment methods available on DMFirst. We support major credit cards, e-wallets, and popular cryptocurrencies.',
+  alternates: {
+    canonical: 'https://dmfirst-ten.vercel.app/payment-methods',
+  },
+  openGraph: {
+    title: 'Payment Methods & Deposit Options | DMFirst',
+    description: 'Explore the secure and fast payment methods available on DMFirst. We support major credit cards, e-wallets, and popular cryptocurrencies.',
+    url: 'https://dmfirst-ten.vercel.app/payment-methods',
+  },
+  twitter: {
+    title: 'Payment Methods & Deposit Options | DMFirst',
+    description: 'Explore the secure and fast payment methods available on DMFirst. We support major credit cards, e-wallets, and popular cryptocurrencies.',
+  },
 };
 
 export default function Page() {

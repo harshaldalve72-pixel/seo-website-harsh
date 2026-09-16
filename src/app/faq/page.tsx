@@ -4,6 +4,18 @@ import { Breadcrumbs } from '@/components/ui/Breadcrumbs';
 export const metadata: Metadata = {
   title: 'Frequently Asked Questions (FAQ) | DMFirst',
   description: 'Find answers to the most common questions about DMFirst accounts, games, payments, and security in our comprehensive FAQ.',
+  alternates: {
+    canonical: 'https://dmfirst-ten.vercel.app/faq',
+  },
+  openGraph: {
+    title: 'Frequently Asked Questions (FAQ) | DMFirst',
+    description: 'Find answers to the most common questions about DMFirst accounts, games, payments, and security in our comprehensive FAQ.',
+    url: 'https://dmfirst-ten.vercel.app/faq',
+  },
+  twitter: {
+    title: 'Frequently Asked Questions (FAQ) | DMFirst',
+    description: 'Find answers to the most common questions about DMFirst accounts, games, payments, and security in our comprehensive FAQ.',
+  },
 };
 
 export default function Page() {

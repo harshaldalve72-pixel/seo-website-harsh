@@ -4,6 +4,22 @@ import { Breadcrumbs } from '@/components/ui/Breadcrumbs';
 export const metadata: Metadata = {
   title: 'Login | DMFirst',
   description: 'Log in to your DMFirst account to access your favorite games, manage your funds, and claim your VIP rewards securely.',
+  alternates: {
+    canonical: 'https://dmfirst-ten.vercel.app/login',
+  },
+  openGraph: {
+    title: 'Login | DMFirst',
+    description: 'Log in to your DMFirst account to access your favorite games, manage your funds, and claim your VIP rewards securely.',
+    url: 'https://dmfirst-ten.vercel.app/login',
+  },
+  twitter: {
+    title: 'Login | DMFirst',
+    description: 'Log in to your DMFirst account to access your favorite games, manage your funds, and claim your VIP rewards securely.',
+  },
+  robots: {
+    index: false,
+    follow: false,
+  },
 };
 
 export default function Page() {

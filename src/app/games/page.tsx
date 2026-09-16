@@ -6,6 +6,18 @@ import type { Metadata } from 'next';
 export const metadata: Metadata = {
   title: 'DMFirst Games – Explore Available Games',
   description: 'Explore the games available on DMFirst and learn about their features, rules, and platform information. Play Crash, Roulette, Blackjack and more.',
+  alternates: {
+    canonical: 'https://dmfirst-ten.vercel.app/games',
+  },
+  openGraph: {
+    title: 'DMFirst Games – Explore Available Games',
+    description: 'Explore the games available on DMFirst and learn about their features, rules, and platform information. Play Crash, Roulette, Blackjack and more.',
+    url: 'https://dmfirst-ten.vercel.app/games',
+  },
+  twitter: {
+    title: 'DMFirst Games – Explore Available Games',
+    description: 'Explore the games available on DMFirst and learn about their features, rules, and platform information. Play Crash, Roulette, Blackjack and more.',
+  },
 };
 
 const allGames = [

@@ -6,6 +6,18 @@ import type { Metadata } from 'next';
 export const metadata: Metadata = {
   title: 'DMFirst Blog – Gaming Guides & News',
   description: 'Read the latest guides, news, and tips on online gaming, strategy, and platform updates from DMFirst.',
+  alternates: {
+    canonical: 'https://dmfirst-ten.vercel.app/blog',
+  },
+  openGraph: {
+    title: 'DMFirst Blog – Gaming Guides & News',
+    description: 'Read the latest guides, news, and tips on online gaming, strategy, and platform updates from DMFirst.',
+    url: 'https://dmfirst-ten.vercel.app/blog',
+  },
+  twitter: {
+    title: 'DMFirst Blog – Gaming Guides & News',
+    description: 'Read the latest guides, news, and tips on online gaming, strategy, and platform updates from DMFirst.',
+  },
 };
 
 export const blogPosts = [

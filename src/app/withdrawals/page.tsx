@@ -4,6 +4,18 @@ import { Breadcrumbs } from '@/components/ui/Breadcrumbs';
 export const metadata: Metadata = {
   title: 'Fast Withdrawals & Cashouts | DMFirst',
   description: 'Learn about our fast and secure withdrawal processes. Get your winnings quickly with our streamlined verification and cashout system.',
+  alternates: {
+    canonical: 'https://dmfirst-ten.vercel.app/withdrawals',
+  },
+  openGraph: {
+    title: 'Fast Withdrawals & Cashouts | DMFirst',
+    description: 'Learn about our fast and secure withdrawal processes. Get your winnings quickly with our streamlined verification and cashout system.',
+    url: 'https://dmfirst-ten.vercel.app/withdrawals',
+  },
+  twitter: {
+    title: 'Fast Withdrawals & Cashouts | DMFirst',
+    description: 'Learn about our fast and secure withdrawal processes. Get your winnings quickly with our streamlined verification and cashout system.',
+  },
 };
 
 export default function Page() {

@@ -4,6 +4,18 @@ import { Breadcrumbs } from '@/components/ui/Breadcrumbs';
 export const metadata: Metadata = {
   title: 'Referral Program - Invite & Earn | DMFirst',
   description: 'Join the DMFirst Referral Program. Invite friends and earn commission on their gameplay. Build your network and increase your passive income.',
+  alternates: {
+    canonical: 'https://dmfirst-ten.vercel.app/referral',
+  },
+  openGraph: {
+    title: 'Referral Program - Invite & Earn | DMFirst',
+    description: 'Join the DMFirst Referral Program. Invite friends and earn commission on their gameplay. Build your network and increase your passive income.',
+    url: 'https://dmfirst-ten.vercel.app/referral',
+  },
+  twitter: {
+    title: 'Referral Program - Invite & Earn | DMFirst',
+    description: 'Join the DMFirst Referral Program. Invite friends and earn commission on their gameplay. Build your network and increase your passive income.',
+  },
 };
 
 export default function Page() {

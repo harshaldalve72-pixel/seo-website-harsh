@@ -5,7 +5,7 @@ export default function robots(): MetadataRoute.Robots {
     rules: {
       userAgent: '*',
       allow: '/',
-      disallow: ['/api/', '/admin/', '/login', '/registration'],
+      disallow: ['/api/', '/admin/'],
     },
     sitemap: 'https://dmfirst-ten.vercel.app/sitemap.xml',
   };

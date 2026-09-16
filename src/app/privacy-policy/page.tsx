@@ -4,6 +4,18 @@ import { Breadcrumbs } from '@/components/ui/Breadcrumbs';
 export const metadata: Metadata = {
   title: 'Privacy Policy & Data Protection | DMFirst',
   description: 'Understand how DMFirst collects, uses, and protects your personal data in accordance with our Privacy Policy.',
+  alternates: {
+    canonical: 'https://dmfirst-ten.vercel.app/privacy-policy',
+  },
+  openGraph: {
+    title: 'Privacy Policy & Data Protection | DMFirst',
+    description: 'Understand how DMFirst collects, uses, and protects your personal data in accordance with our Privacy Policy.',
+    url: 'https://dmfirst-ten.vercel.app/privacy-policy',
+  },
+  twitter: {
+    title: 'Privacy Policy & Data Protection | DMFirst',
+    description: 'Understand how DMFirst collects, uses, and protects your personal data in accordance with our Privacy Policy.',
+  },
 };
 
 export default function Page() {

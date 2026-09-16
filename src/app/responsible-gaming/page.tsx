@@ -4,6 +4,18 @@ import { Breadcrumbs } from '@/components/ui/Breadcrumbs';
 export const metadata: Metadata = {
   title: 'Responsible Gaming & Player Safety | DMFirst',
   description: 'DMFirst is committed to responsible gaming. Learn about our tools to manage your play, set limits, and find support resources.',
+  alternates: {
+    canonical: 'https://dmfirst-ten.vercel.app/responsible-gaming',
+  },
+  openGraph: {
+    title: 'Responsible Gaming & Player Safety | DMFirst',
+    description: 'DMFirst is committed to responsible gaming. Learn about our tools to manage your play, set limits, and find support resources.',
+    url: 'https://dmfirst-ten.vercel.app/responsible-gaming',
+  },
+  twitter: {
+    title: 'Responsible Gaming & Player Safety | DMFirst',
+    description: 'DMFirst is committed to responsible gaming. Learn about our tools to manage your play, set limits, and find support resources.',
+  },
 };
 
 export default function Page() {

@@ -4,6 +4,18 @@ import { Breadcrumbs } from '@/components/ui/Breadcrumbs';
 export const metadata: Metadata = {
   title: 'Player Rewards & Promotions | DMFirst',
   description: 'Discover the latest rewards, bonuses, and promotions available at DMFirst. Maximize your gameplay with deposit bonuses and free spins.',
+  alternates: {
+    canonical: 'https://dmfirst-ten.vercel.app/rewards',
+  },
+  openGraph: {
+    title: 'Player Rewards & Promotions | DMFirst',
+    description: 'Discover the latest rewards, bonuses, and promotions available at DMFirst. Maximize your gameplay with deposit bonuses and free spins.',
+    url: 'https://dmfirst-ten.vercel.app/rewards',
+  },
+  twitter: {
+    title: 'Player Rewards & Promotions | DMFirst',
+    description: 'Discover the latest rewards, bonuses, and promotions available at DMFirst. Maximize your gameplay with deposit bonuses and free spins.',
+  },
 };
 
 export default function Page() {

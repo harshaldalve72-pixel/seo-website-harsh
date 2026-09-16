@@ -33,22 +33,6 @@ export const metadata: Metadata = {
   creator: 'DMFirst',
   publisher: 'DMFirst',
   category: 'entertainment',
-  alternates: {
-    canonical: '/',
-  },
-  openGraph: {
-    type: 'website',
-    locale: 'en_US',
-    url: '/',
-    siteName: 'DMFirst',
-    title: 'DMFirst Game - Premium Online Gaming',
-    description: 'Explore games, rewards, account tools, and platform information from DMFirst.',
-  },
-  twitter: {
-    card: 'summary',
-    title: 'DMFirst Game - Premium Online Gaming',
-    description: 'Explore games, rewards, account tools, and platform information from DMFirst.',
-  },
   robots: {
     index: true,
     follow: true,

@@ -20,15 +20,27 @@ export async function generateMetadata(
     return { title: 'Article Not Found' };
   }
 
+  const title = `${post.title} | DMFirst Blog`;
+  const description = post.excerpt;
+  const url = `https://dmfirst-ten.vercel.app/blog/${params.slug}`;
+
   return {
-    title: `${post.title} | DMFirst Blog`,
-    description: post.excerpt,
+    title,
+    description,
+    alternates: {
+      canonical: url,
+    },
     openGraph: {
-      title: post.title,
-      description: post.excerpt,
+      title,
+      description,
+      url,
       type: 'article',
       publishedTime: post.date,
-    }
+    },
+    twitter: {
+      title,
+      description,
+    },
   };
 }
 
